@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.stadion.StadionTambahActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="TAMBAH DATA STADION"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/border_radius"
+            android:drawableStart="@drawable/gmbr_stadion"
+            android:drawablePadding="15dp"
+            android:hint="Nama Stadion"
+            android:inputType="text"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_judul" />
+
+        <EditText
+            android:id="@+id/et_lokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border_radius"
+            android:drawableStart="@drawable/gmbr_lokasi"
+            android:drawablePadding="10dp"
+            android:hint="Lokasi Stadion"
+            android:inputType="text"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_nama" />
+
+        <EditText
+            android:id="@+id/et_tahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border_radius"
+            android:drawableStart="@drawable/gmbr_tahun"
+            android:drawablePadding="8dp"
+            android:hint="Tahun Berdiri"
+            android:inputType="text"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_lokasi" />
+
+        <EditText
+            android:id="@+id/et_kapasitas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border_radius"
+            android:drawableStart="@drawable/gmbr_kapasitas"
+            android:drawablePadding="10dp"
+            android:hint="Kapasitas Stadion"
+            android:inputType="text"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_tahun" />
+
+        <EditText
+            android:id="@+id/et_foto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border_radius"
+            android:drawableStart="@drawable/gmbr_foto"
+            android:drawablePadding="10dp"
+            android:hint="Link Foto"
+            android:inputType="text"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_kapasitas" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_tambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="40dp"
+            android:padding="12dp"
+            android:text="TAMBAH"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_foto" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

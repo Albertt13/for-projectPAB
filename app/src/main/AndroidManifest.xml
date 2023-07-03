@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ClubLigaInggris"
+        tools:targetApi="31" >
+        <activity
+            android:name=".activity.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.stadion.StadionDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.stadion.StadionUbahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.stadion.StadionTambahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.club.ClubUbahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.club.ClubDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.club.ClubTambahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.club.ClubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.stadion.StadionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:theme="@style/Theme.ClubLigaInggris.NoActionBar"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
